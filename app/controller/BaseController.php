@@ -38,6 +38,18 @@ class BaseController{
 
         $this->session =$di->get("session");
 
+        $this->commonTV();
+
+    }
+
+    public function commonTV(){
+
+        $this->tv["homelink"] = $this->router->pathFor("home");
+
+        $this->tv["signinlink"] = $this->router->pathFor("signin");
+
+        $this->tv["signuplink"] = $this->router->pathFor("signup");
+
     }
 
 }

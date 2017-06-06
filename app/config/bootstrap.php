@@ -98,15 +98,7 @@ $di["user"] = function($di){
 
 $di["tv"] = function($di){
 
-    $tv = [];
-
-    $tv["homelink"] = $di->get("router")->pathFor("home");
-
-    $tv["signinlink"] = $di->get("router")->pathFor("signin");
-
-    $tv["signuplink"] = $di->get("router")->pathFor("signup");
-
-    return $tv;
+    return [];
 
 };
 
